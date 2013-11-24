@@ -13,6 +13,12 @@ Many texts, particularly scientific papers, contain sequences of digits, single 
 
 The second group of rules contains 139 suffix rules, each testing for a specific type of suffix. The rules are set in a particular order so that the longest suffix applicable is used rather a shorter one which could lead to nonsense words and more words not stemmed entirely to their root form.
 
+Usage
+-------
+An example can be found at:
+
+Stemmer/src/stemmer/Stemmer.java
+
 License
 -------
 Licensed under the Apache License, Version 2.0 (the "License");

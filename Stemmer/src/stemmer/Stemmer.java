@@ -26,7 +26,7 @@ import com.uea.stemmer.*;
 import java.io.IOException;
 
 /**
- * An example of the UEA Lite stememr; this may require changes before working.
+ * An example of the UEA Lite stemmer; this may require changes before working.
  * 
  * @author  Marcus Craske       marcus.craske@uea.ac.uk
  * @version 1.0
@@ -36,10 +36,11 @@ public class Stemmer
     public static void main(String[] args) throws IOException
     {
         UEALite ul = new UEALite();
-        FileStemming.stemDirectory(ul, new WhitespaceAlphaTokenizer(), "../../Matlab/Materials/fold1/original-text-files", "../../Matlab/Materials/fold1/uealite", "stem");
-        FileStemming.stemDirectory(ul, new WhitespaceAlphaTokenizer(), "../../Matlab/Materials/fold2/original-text-files", "../../Matlab/Materials/fold2/uealite", "stem");
-        FileStemming.stemDirectory(ul, new WhitespaceAlphaTokenizer(), "../../Matlab/Materials/fold3/original-text-files", "../../Matlab/Materials/fold3/uealite", "stem");
-        FileStemming.stemDirectory(ul, new WhitespaceAlphaTokenizer(), "../../Matlab/Materials/fold4/original-text-files", "../../Matlab/Materials/fold4/uealite", "stem");
-        FileStemming.stemDirectory(ul, new WhitespaceAlphaTokenizer(), "../../Matlab/Materials/fold5/original-text-files", "../../Matlab/Materials/fold5/uealite", "stem");
+        WhitespaceAlphaTokenizer tokenizer = new WhitespaceAlphaTokenizer();
+        FileStemming.stemDirectory(ul, tokenizer, "../../Matlab/Materials/fold1/original-text-files", "../../Matlab/Materials/fold1/uealite", "stem");
+        FileStemming.stemDirectory(ul, tokenizer, "../../Matlab/Materials/fold2/original-text-files", "../../Matlab/Materials/fold2/uealite", "stem");
+        FileStemming.stemDirectory(ul, tokenizer, "../../Matlab/Materials/fold3/original-text-files", "../../Matlab/Materials/fold3/uealite", "stem");
+        FileStemming.stemDirectory(ul, tokenizer, "../../Matlab/Materials/fold4/original-text-files", "../../Matlab/Materials/fold4/uealite", "stem");
+        FileStemming.stemDirectory(ul, tokenizer, "../../Matlab/Materials/fold5/original-text-files", "../../Matlab/Materials/fold5/uealite", "stem");
     }
 }
