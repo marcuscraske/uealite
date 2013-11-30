@@ -20,6 +20,7 @@ An example of the Java port can be found at:
 Stemmer/src/stemmer/Stemmer.java
 
 Refer to the file header for the Matlab port documentation and usage, located at:
+
 Matlab/stemmer_uealite.m
 
 License
@@ -38,4 +39,4 @@ limitations under the License.
 
 More Information
 ----------------
-* http://www2.cmp.uea.ac.uk/~djs/projects/UEAlite/stemmer.html
+* https://www.uea.ac.uk/computing/word-stemming
