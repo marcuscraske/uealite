@@ -1,6 +1,6 @@
-UEA Lite Stemmer
+UEA-Lite Stemmer
 ================
-A Java port of the UEA-Lite stemmer, originally by Richard Churchill.
+A Java (originally by Richard Churchill) and Matlab port of the UEA-Lite stemmer.
 
 About
 ------
@@ -15,9 +15,12 @@ The second group of rules contains 139 suffix rules, each testing for a specific
 
 Usage
 -------
-An example can be found at:
+An example of the Java port can be found at:
 
 Stemmer/src/stemmer/Stemmer.java
+
+Refer to the file header for the Matlab port documentation and usage, located at:
+Matlab/stemmer_uealite.m
 
 License
 -------
